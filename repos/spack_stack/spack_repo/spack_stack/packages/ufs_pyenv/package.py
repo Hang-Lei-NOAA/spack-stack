@@ -17,8 +17,10 @@ class UfsPyenv(BundlePackage):
 
     maintainers("AlexanderRichert-NOAA", "Hang-Lei-NOAA")
 
+    version("1.1.0")
     version("1.0.0")
 
+    depends_on("py-pyresample", when="@1.1.0:")
     depends_on("py-cython")
     depends_on("py-cftime")
     # depends_on("py-h5py")
